@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* This is the external CSS file for my
+   personal website.
+
+   Author: Trevor Parmelee
+   Date: 5/12/2023
+   Filename: parmeleeProject.css
+*/
+
+/* HTML and Body Styles */
+html {
+   background: hsl(70, 7%, 18%);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+   max-width: 960px;
+   min-width: 640px;
+   min-height: fit-content;
+   width: 100%;
+   margin: 0px auto;
+   background: hsl(27, 100%, 83%);
+}
+
+/* Header Styles */
+header {
+   padding-bottom: 20px;
+   color: rgba(176,86,70,255);
+}
+
+header > h1 {
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   text-shadow: black 1px .5px;
+}
+
+h1 {
+   margin-left: 30px;
+}
+
+/* img Styles */
+img.headerphoto {
+   display: block;
+   width: 100%;
+   border: 1px solid black;
+}
+
+img {
+   border:2px solid hsl(159, 10%, 49%);
+   border-radius: 30px;
+}
+
+/* PDF Viewer Styles */
+object {
+   display: block;
+   margin: auto;
+   width: 90%;
+   padding: 10px;
+}
+
+/* Footer Styles */
+footer {
+   background-color: hsl(159, 10%, 49%);
+   border-top: 2px solid hsl(70, 7%, 18%);
+   font-weight: bolder;
+}
+
+footer > p {
+   padding-left: 20px;
+   padding-bottom: 10px;
+}
+
+/* Nav Styles */
+body > nav.navigation {
+   display: block;
+   flex: auto;
+   text-align: center;
+   width: 100%;
+}
+
+nav > ul > li {
+   display: block;
+   width: 19%;
+   height: 25px;
+   float: left;
+   text-align: center;
+   background-color: hsl(21, 96%, 67%);
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   border: .5px ridge black;
+}
+
+nav>ul>li>a:hover, nav>ul>li>a:active {
+   display: block;
+   height: 25px;
+   background-color: hsl(159, 10%, 49%);
+   color:hsl(23, 11%, 14%);
+   text-decoration: none;
+}
+
+a:visited, a:link {
+   text-decoration: none;
+   color: hsl(23, 11%, 14%);
+}
+
+/* Section Styles */
+p#directions {
+   text-align: center;
+}
+
+article {
+   margin: 0px 50px 0px 50px;
+}
+
+article > aside {
+   display: block;
+   width: 100%;
+   margin: 5px auto 5px auto;
+   padding: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body > section > h2 {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+}
+
+
+
+/* Table Styles */
+.burritopic {
+   display: flex;
+   max-height: 400px;
+   max-width: 520px;
+}
+
+caption, td, tr {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+caption, th {
+   font-weight: bold;
+}
+
+img.cats {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+div#botany {
+   margin: auto;
+}
+
+table#plantTable {
+   display: block;
+   margin: auto;
+   width: 100%;
+}
+
+
+
+table#plantTable td {
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: center;
+}
+
+table#plantTable img {
+   border:2px solid hsl(159, 10%, 49%);
+   border-radius: 30px;
+}
+
+
+
+/* Frame Styles */
+
+
+div#scrollingFrame {
+   position: relative;
+   overflow: hidden;
+   width: 31%;
+   height: 410px;
+   margin: 0px 5px;
+   border: hsl(70, 7%, 18%) 5px solid;
+   border-radius: 20px;
+}
+
+div#scrollingFrame table {
+   position: absolute;
+}
+
+body > section > div#botany {
+   flex: 1 1 400px;
+   align-self: content;
+}
+
+/* Keyframe Styles */
+@keyframes scroll {
+   0% {top: 0px;}
+   100% {top: -2500px;}
+
+}
+
+/* Animation Styles */
+div#scrollingFrame table:hover {
+   animation: scroll 25s linear infinite;
+}
+
+div#scrollingFrame:hover table {
+   animation-play-state: running;
+}
